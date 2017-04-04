@@ -51,54 +51,54 @@ int main() {
             1 = ace1;
             ace1 = 1;
             break;
-        case '2':
+        case 2:
             2 = ace11;
             ace11 = 11;
             break;
-        case '3':
+        case 3:
             3 = c2;
             c2 = 2;
             break;
-        case '4':
+        case 4:
             4 = c3;
             c3 = 3;
             break;
-        case '5':
+        case 5:
             5 = c4;
             c3 = 3;
             break;
-        case '6':
+        case 6:
             6 = c5;
             c5 = 5;
             break;
-        case '7':
+        case 7:
             7 = c6;
             c6 = 6;
-        case '8':
+        case 8:
             8 = c7;
             c7 = 7;
             break;
-        case '9':
+        case 9:
             9 = c8;
             c8 = 8;
             break;
-        case '10':
+        case 10:
             10 = c9;
             c9 = 9;
             break;
-        case '11':
+        case 11:
             11 = c10;
             c10 = 10;
             break;
-        case '12':
+        case 12:
             12 = cking;
             cking = 10;
             break;
-        case '13':
+        case 13:
             13 = cqueen;
             cqueen = 10;
             break;
-        case '14':
+        case 14:
             14 = cjack
             cjack = 10;
             break;
