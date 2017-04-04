@@ -7,6 +7,7 @@
 #include <stdio.h>
 #include <math.h>
 #include <stdlib.h>
+#include <time.h>
 /**********************************************************
 *
 *   Variable Declaration Area
@@ -14,19 +15,12 @@
 **********************************************************/
 int ace1 = 1;
 int ace11 = 11;
-int c2 = 2;
-int c3 = 3;
-int c4 = 4;
-int c5 = 5;
-int c6 = 6;
-int c7 = 7;
-int c8 = 8;
-int c9 = 9;
-int c10 = 10;
+int card
 int cking = 10;
 int cqueen = 10;
 int cjack = 10;
 int card;
+int cardsum;
 char Y;
 char N;
 char yn;
@@ -41,13 +35,18 @@ double ppoints;
 *   Main Routine
 *
 ***********************************************************/
-int main() {
-
-    printf("Welcome to SmithJack!\n\n");
-    printf("Let's play!\n");
+int main()
+{
+printf("Welcome to the awesome game of smithjack!");
+    
+    while (no != 'y')
+printf("Lets play!\n");
+{
+    srand(time(NULL));
+    card = 1 + rand() % 14;
     
     switch(card){
-        case '1':
+        case 1:
             1 = ace1;
             ace1 = 1;
             break;
@@ -103,34 +102,40 @@ int main() {
             cjack = 10;
             break;
 
-    while (yn != 'N') {
         
-        srand(time(NULL));
-        n = 1 + rand() % 10;
-        y = 1 + rand() % 10;
-        
-        while ( x != n*y ) {
-
-            printf("First number is %d and", n);
-            printf(" the second number is %d\n", y);
-
-            printf("Enter your initial guess of the product of these two numbers\n");
-            scanf("%d", &x);
-
-            if (x == n*y) {
-                printf("Correct! That's the answer\n");
-            }
-            else if (x > n*y) {
-                printf("Too high, try again\n");
-            }
-            else if (x < n*y) {
-                printf("Too low, try again\n");
-            }
-        }
-
-        printf("Would you like to play again?(Y or N)\n");
-        scanf(" %c", &yn);
+          }
+     if (cardsum<=21)
+     {
+     ace=11;
+} 
+    else if(cardsum>=21)
+    {
+        ace=1;
+     
     }
+    printf("The score is:\n");// only if user has ended program
+    printf("---------------\n");
+    printf("Dealer:%d   Player:%d \n", dealerscore, playerscore);
+    printf("Would you like to do another?(enter y for Yes or n for No)\n"); //prompt user for a repitition
+        scanf (" %c", &no);          //scans in answer and if y==0 stops the loop
+
+}
+
+        if(playerscore<=dealerscore)
+    {
+    printf("To bad! Thankyou for your money! Checks to be written out to Freeman R. George\n");
+    }
+        else(playerscore>=dealerscore)
+    {
+        printf("Well done! Il'll get you next time!\n");
+    }
+printf("Have a nice day");
+    return 0;
+}    
+
+
+Contact GitHub API Training Shop Blog About
+© 2017 GitHub, Inc
     printf("Thank you for playing\n");
     return 0;
 }
